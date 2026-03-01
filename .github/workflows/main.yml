@@ -22,6 +22,7 @@ jobs:
   segundo-job:
     name: "Instalação do ambiente Node.js"
     runs-on: ubuntu-latest
+    needs: [primeiro-job] #O segundo job só irá executar depois do sucesso da execução do primeiro job
     steps:
       - name: "Verificação da versão do Node.js atual"
         run: node --version        
