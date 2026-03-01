@@ -26,7 +26,7 @@ jobs:
       - name: "Verificação da versão do Node.js atual"
         run: node --version        
       - name: "Definição da versão 24.14.0 LTS do Node.js"
-      - uses: actions/setup-node@v6
+        uses: actions/setup-node@v6
         with: 
          node-version: "24.14.0"         
       - name: "Verificação da versão do Node.js depois de instalar"
